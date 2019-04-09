@@ -1,0 +1,16 @@
+version: "2"
+services:
+ objdetect:
+    build:
+      context: ""
+      dockerfile: ./Dockerfile.ubuntu
+    image: objdetect:latest
+    network_mode: bridge
+    entrypoint:
+      - /bin/entrypoint.sh
+    environment:
+      SERVICE_PORT: "6006"
+      SERVICE_TIMEOUT: "900"
+      WORKER_COUNT: "1"
+    ports:
+      - "6006:6006"
