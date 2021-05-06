@@ -11,7 +11,7 @@ enum34==1.1.6
 face-recognition==1.2.2
 face-recognition-models==0.3.0
 Flask==1.0.2
-Flask-Cors==3.0.4
+Flask-Cors==3.0.9
 html5lib==0.9999999
 idna==2.6
 imutils==0.4.3
